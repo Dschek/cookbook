@@ -36,11 +36,11 @@ save sert
 ## INSTALL NGINX
 - sudo apt update
 - sudo apt install nginx
-#### ADD DOMAIN
+## ADD DOMAIN
 - sudo nano /etc/nginx/sites-available/your_domain
 - sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
 - sudo systemctl reload nginx
-#### CHANGE CONFIG FILE
+## CHANGE CONFIG FILE
 - sudo nano /etc/nginx/nginx.conf
 - sudo nginx -t
 - sudo systemctl restart nginx
