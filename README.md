@@ -33,6 +33,26 @@ save sert
 # Docker
 
 # Nginx
+## INSTALL NGINX
+- sudo apt update
+- sudo apt install nginx
+#### ADD DOMAIN
+- sudo nano /etc/nginx/sites-available/your_domain
+- sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
+- sudo systemctl reload nginx
+#### CHANGE CONFIG FILE
+- sudo nano /etc/nginx/nginx.conf
+- sudo nginx -t
+- sudo systemctl restart nginx
+## FIREWALL COMAND
+- sudo ufw app list
+- sudo ufw allow 'Nginx HTTP'
+- sudo ufw status
+## HOW ADD SERT
+- apt install certbot python3-certbot-nginx
+- sudo certbot --nginx -d domain.online (http://domain.online/)  -d www.domain.online (http://www.domain.online/) --no-redirect
+## Default file
+{}
 
 # Portainer
 
