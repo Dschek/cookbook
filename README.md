@@ -37,6 +37,9 @@ Save sert
 Start openvpn with sert 
 - openvpn --client --config /etc/openvpn/client.conf & 
 
+Auto start openvpn
+- sudo systemctl enable openvpn-client@service
+
 # K8S
 
 # DOCKER
