@@ -1,4 +1,5 @@
-# NODE
+# MY DOCKER  FILE
+## NODE
 ```
 FROM node:14-alpine
 
@@ -11,7 +12,7 @@ EXPOSE 9201
 
 CMD [ "node", "app.js" ]
 ```
-# REACT
+## REACT
 ```
 FROM nginx:alpine
 
@@ -21,7 +22,7 @@ COPY ./nginx.conf /etc/nginx/nginx.conf
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 ```
-# SPRING
+## SPRING
 ```
 FROM openjdk:16-jdk-alpine
 
