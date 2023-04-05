@@ -55,7 +55,7 @@ IP_ADDRESS kube-worker
 ## AUTO START KUBELET 
 - sudo systemctl enable --now kubelet
 ## DISABLE ADD SWAP 
--- sudo swapoff -a
+- sudo swapoff -a
 # CONFIG 
 ## ENABLE EVERLAY
 - sudo modprobe overlay
@@ -63,17 +63,12 @@ IP_ADDRESS kube-worker
 - sudo modprobe br_netfilter
 ## CONFIG SYSCTL
 - sudo nano /etc/sysctl.d/kubernetes.conf
-
-
 ```
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
 net.ipv4.ip_forward = 1
 ```
-
-
  - sudo sysctl --system
-
  # START K8S
  ## MASTER
  ### PULL IMAGE 
