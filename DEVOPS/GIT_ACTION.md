@@ -1,4 +1,4 @@
-# NODE
+NODE
 ```
 name: Node.js CI
 
@@ -35,7 +35,7 @@ jobs:
         IMAGE_NAME: crystal
       run: docker push "${{ steps.global_env.outputs.DOCKERHUB_IMAGE_NAME }}"
 ```
-# REACT
+REACT
 ```
 name: Node.js CI
 
@@ -77,7 +77,7 @@ jobs:
     - name: Publish image
       run: docker push "${{ steps.global_env.outputs.DOCKERHUB_IMAGE_NAME }}"
 ```
-# SPRING
+SPRING
 ```
 name: Java CI with Gradle
 
