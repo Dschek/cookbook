@@ -1,21 +1,61 @@
-# Install Nginx
-- sudo apt update
-- sudo apt install nginx
+# Install NGINX
+UPDATE PACKAGE
+```
+sudo apt update
+```
+INSTALL NGINX
+```
+sudo apt install nginx
+```
 # Add domain
-- sudo nano /etc/nginx/sites-available/your_domain
-- sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
-- sudo systemctl reload nginx
-# Change config file (if need)
-- sudo nano /etc/nginx/nginx.conf
-- sudo nginx -t
-- sudo systemctl restart nginx
-# Firewall comaand
-- sudo ufw app list
-- sudo ufw allow 'Nginx HTTP'
-- sudo ufw status
-# How add sert
-- apt install certbot python3-certbot-nginx
-- sudo certbot --nginx -d domain.online (http://domain.online/)  -d www.domain.online (http://www.domain.online/) --no-redirect
+ADD FILE 
+```
+sudo nano /etc/nginx/sites-available/your_domain
+```
+- SET YOUR CONFIG
+
+LINK FILE IN DIRECTORIES 
+```
+sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
+```
+RELOAD NGINX
+```
+sudo systemctl reload nginx
+```
+Change config file (if need)
+```
+sudo nano /etc/nginx/nginx.conf
+```
+CHECK NGINX CONFIG
+```
+sudo nginx -t
+```
+RESTART NGINX
+```
+sudo systemctl restart nginx
+```
+# Firewall CONFIG
+GET LIST FIREWALL RULE
+```
+sudo ufw app list
+```
+ADD NGINX HTTP IN RULE
+```
+sudo ufw allow 'Nginx HTTP'
+```
+CHECK FIREWALL STATUS
+```
+sudo ufw status
+```
+# INSTALL CERTBOT
+INSTALL CERTBOT
+```
+apt install certbot python3-certbot-nginx
+```
+ADD SERT FOR DOMAIN
+```
+sudo certbot --nginx -d domain.online (http://domain.online/)  -d www.domain.online (http://www.domain.online/) --no-redirect
+```
 # Default file
 ## REACT APP
 ```
