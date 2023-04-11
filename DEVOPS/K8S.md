@@ -1,7 +1,7 @@
 # INSTALL CRIO
 SET UBUNTU VERSION
 ```
-OS=xUbuntu_20.04
+OS=xUbuntu_22.04
 ```
 SET CRIO VERSION
 ```
