@@ -34,9 +34,9 @@ EXPOSE 8080
 CMD java -jar rest.jar
 ```
 ## Mysql
-'''
+```
 docker run --name some-mysql -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
-'''
+```
 ## MongoDB
-'''
-'''
+```
+```
