@@ -10,4 +10,5 @@ ee:latest
 ```
 SET LICENSE KEY
 ```
+2-NgAXqIeNRJAi6LPFXfeMLiMBFV+EgWjKARTgGxseOaTZx508epmyYuVIUi/ebSCbd96epyetuF4V+fIX5Fg=
 ```
