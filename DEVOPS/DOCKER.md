@@ -39,5 +39,5 @@ docker run --name some-mysql -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSW
 ```
 ## MongoDB
 ```
-docker run -d -p 27017:27017 --name mongodb -v mongo-data:/data/db -e MONGODB_INITDB_ROOT_USERNAME=MyMongoUser -e MONGODB_INITDB_ROOT_PASSWORD=My1MongoPass --network mongodb mongo:4.4.6
+docker run -d -p 27017:27017 --name mongodb -v mongo-data:/data/db -e MONGODB_INITDB_ROOT_USERNAME=MyMongoUser -e MONGODB_INITDB_ROOT_PASSWORD=My1MongoPass -e MONGO_INITDB_DATABASE=crystal --network mongodb mongo:4.4.6
 ```
