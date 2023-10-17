@@ -54,7 +54,7 @@ apt install certbot python3-certbot-nginx
 ```
 ADD SERT FOR DOMAIN
 ```
-sudo certbot --nginx -d domain.online (http://domain.online/)  -d www.domain.online (http://www.domain.online/) --no-redirect
+sudo certbot --nginx -d domain.online -d www.domain.online  -no-redirect
 ```
 # Default file
 ## REACT APP
