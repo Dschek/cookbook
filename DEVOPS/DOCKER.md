@@ -43,5 +43,5 @@ docker run -d -p 27017:27017 --name mongodb -v mongo-data:/data/db -e MONGODB_IN
 ```
 ## Postgres
 ```
-docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=12345678 -d postgres
+docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=12345678 --network postgres -d postgres
 ```
