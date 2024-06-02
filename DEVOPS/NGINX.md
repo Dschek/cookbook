@@ -49,7 +49,7 @@ sudo ufw status
 ```
 ADD FIREWALL IP RULES
 ```
-sudo ufw allow from 46.29.239.40 to any
+sudo ufw allow from ip to any
 ```
 # INSTALL CERTBOT
 INSTALL CERTBOT
