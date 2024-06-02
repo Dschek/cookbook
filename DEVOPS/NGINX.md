@@ -47,6 +47,10 @@ CHECK FIREWALL STATUS
 ```
 sudo ufw status
 ```
+ADD FIREWALL IP RULES
+```
+sudo ufw allow from 46.29.239.40 to any
+```
 # INSTALL CERTBOT
 INSTALL CERTBOT
 ```
@@ -112,3 +116,4 @@ http {
 ## DEFAULT APP
 ```
 ```
+
