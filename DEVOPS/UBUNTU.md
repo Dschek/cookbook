@@ -11,3 +11,8 @@ UPDATE VERSION
 ```
 sudo do-release-upgrade -y
 ```
+# SSH
+SET SERT
+```
+ssh-copy-id username@remote_host
+```
