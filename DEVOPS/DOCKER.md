@@ -35,7 +35,11 @@ CMD java -jar rest.jar
 ```
 ## Mysql
 ```
-docker run --name some-mysql -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+docker run --name some-mysql \
+  -v /my/custom:/etc/mysql/conf.d \
+  -e MYSQL_ROOT_PASSWORD=my-secret-pw \
+  -e MYSQL_DATABASE=mrcod \
+  -d mysql
 ```
 ## MongoDB
 ```
