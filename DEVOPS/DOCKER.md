@@ -39,6 +39,7 @@ docker run --name some-mysql \
   -v /my/custom:/etc/mysql/conf.d \
   -e MYSQL_ROOT_PASSWORD=my-secret-pw \
   -e MYSQL_DATABASE=mrcod \
+  -p 3306:3306 \
   -d mysql
 ```
 ## MongoDB
